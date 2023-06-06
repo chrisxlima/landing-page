@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--form-background);
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 65rem;
+    height: 40rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.login-form {
+    background: var(--background);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 32.5rem;
+    height: 40rem;
+}
+
+.logo {
+    position: relative;
+    bottom: 6.3rem;
+    right: 11rem;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--form-background);
+    width: 25rem;
+    height: 23rem;
+}
+
+.form-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-title {
+    display: flex;
+    font-size: 0.8rem;
+    color: var(--text-title);
+}
+
+.form-title h1 {
+    margin-left: 0.5rem;
+}
+
+.form-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.55rem;
+    color: var(--text-base);
+    margin-top: 0.2rem;
+}
+
+.form-email {
+    display: flex;
+    flex-flow: column;
+    color: var(--text-base);
+    margin-top: 1.3rem;
+}
+
+#email-id {
+    background: url(images/images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 0.4rem;
+}
+
+#email-id:focus {
+    background: url(images/images/mail-focus.svg);
+    background-repeat: no-repeat;
+    background-position: 0.4rem;
+}
+
+.form-email label {
+    font-size: 0.8rem;
+}
+
+.form-email input {
+    padding: 8px 5px;
+    background: var(--form-background);
+    border-color: var(--text-base);
+    border-radius: 4px;
+}
+
+.form-email input::placeholder {
+    color: var(--text-base);
+}
+
+.form-email input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+.form-password {
+    display: flex;
+    flex-flow: column;
+    color: var(--text-base);
+    margin-top: 0.7rem;
+}
+
+#password-id {
+    background: url(images/images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 0.4rem;
+}
+
+#password-id:focus {
+    background: url(images/images/lock-focus.svg);
+    background-repeat: no-repeat;
+    background-position: 0.4rem;
+}
+
+.form-password label {
+    font-size: 0.8rem;
+}
+
+.form-password input {
+    padding: 8px 5px;
+    background: var(--form-background);
+    color: var(--text-base);
+    border-color: var(--text-base);
+    border-radius: 4px;
+}
+
+.form-password input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--text-base);
+    margin-top: 0.7rem;
+}
+
+.form-check label {
+    flex: 1;
+    margin-left: 0.3rem;
+}
+
+.form-check input {
+    background: var(--form-background);
+}
+
+.form-check input:checked {
+    color: var(--primary-color);
+}
+
+.form-check a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.form-btn button{
+    background: var(--primary-color);
+    color: var(--form-background);
+    margin-top: 0.7rem;
+    padding: 13px 120px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-register {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    margin-top: 0.7rem;
+}
+
+.form-register a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.background-form {
+    background-image: url(images/images/side-image.jpg);
+    background-size: cover;
+    width: 32.5rem;
+    height: 40rem;
+}
